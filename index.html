@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="pt-BR-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
-    
+
+    <header>
+        <img src="logo.png" alt="logo" class="logo">
+        <h1 id="header-title">Cadastro</h1>
+        <form action="" method="get" id="login">
+            <label for="uname"><b>Usuário</b></label>
+            <input type="text" placeholder="Insira o Usuário" name="uname" required>
+            <br>
+            <label for="psw"><b>Senha</b></label>
+            <input type="password" placeholder="Insira a Senha" name="psw" required>
+
+        </form>
+    </header>
+    <main>
+        <h2>Formulário de Cadastro</h2>
+        <form action="" method="get" id="form_cadastro">
+            <label for="nome">Nome</label>
+            <input type="text" placeholder="Insira seu nome" name="nome" required>
+            <br>
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" placeholder="Insira seu Sobrenome" name="sobrenome" required>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Insira seu Email" name="email" required>
+
+            <label for="inter">Areas de Interesse</label>
+            <select name="inter" id="area">
+                <option value="">Escolha um Interesse</option>
+                <option value="Frontend">Frontend</option>
+                <option value="Backend">Backend</option>
+                <option value="DataScience">DataScience</option>
+                <option value="UX-UI">UX/UI Design</option>
+            </select>
+            <label for="name" id="label-profile">Qual seu Perfil?</label>
+            <div class="radio-group">
+                <label for="estudante">Estudante</label>
+                <input type="radio" name="profile" id="estudante" value="estudante" checked>
+                <label for="profissional">Profissional</label>
+                <input type="radio" id="profissional" name="profile" value="profissional">
+                <label for="recrutador">Recrutador</label>
+                <input type="radio" id="recrutador" name="profile" value="recrutador">
+            </div>
+        </form>
+
+    </main>
+
 </body>
+
 </html>

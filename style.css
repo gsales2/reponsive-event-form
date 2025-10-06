@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+header {
+    background-color: rgb(24, 42, 66);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo {
+    width: 8rem;
+    height: auto;
+}
+
+#header-title {
+    flex: 1;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    gap: 0.5rem;
+}
+
+#login label {
+    font-size: 0.9rem;
+}
+
+#login input {
+    padding: 0.4rem;
+    border: none;
+    border-radius: 4px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1 rem;
+}
+
+main h2 {
+    font-size: 1.8rem;
+    color: rgb(24, 42, 66);
+    margin-bottom: 1.5rem;
+}
+
+#form_cadastro {
+    width: 90%;
+    max-width: 450px;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#form_cadastro label {
+    font-weight: bold;
+    text-align: left;
+    color: #333;
+}
+
+#form_cadastro input[type="text"],
+#form_cadastro input[type="email"],
+#form_cadastro select {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#form_cadastro select {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#label-profile {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+#form_cadastro input[type="radio"] {
+    margin-right: 0.4rem;
+}
+
+#form_cadastro label[for="estudante"],
+#form_cadastro label[for="profissional"],
+#form_cadastro label[for="recrutador"] {
+    font-weight: normal;
+    margin-right: 0.8rem;
+}
+
+#form_cadastro button {
+    background-color: rgb(24, 42, 66);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#form_cadastro button:hover {
+    background-color: rgb(35, 60, 95);
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+@media(min-width: 768px){
+    #form_cadastro {
+        width: 50%;
+        padding: 2rem;
+    }
+
+    #login {
+        width: 15%; /* menor no desktop */
+    }
+
+    #header-title {
+        font-size: 2rem;
+    }
+}
