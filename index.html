@@ -51,9 +51,45 @@
                 <label for="recrutador">Recrutador</label>
                 <input type="radio" id="recrutador" name="profile" value="recrutador">
             </div>
+            <label for="label-topics" id="label-topics">Quais temas mais te interessam?</label>
+            <div class="topics-group">
+                <label><input type="checkbox" class="topic" name="topics" value="AI"> AI</label>
+                <label><input type="checkbox" class="topic" name="topics" value="Cloud"> Cloud</label>
+                <label><input type="checkbox" class="topic" name="topics" value="DevOps"> DevOps</label>
+                <label><input type="checkbox" class="topic" name="topics" value="Frontend"> Frontend</label>
+                <label><input type="checkbox" class="topic" name="topics" value="Backend"> Backend</label>
+                <label><input type="checkbox" class="topic" name="topics" value="Soft Skills"> Soft Skills</label>
+            </div>
+            <label id="label-rate">Como você avalia o Xablau Summit?</label>
+            <div class="rate-group">
+                <label><input type="radio" name="rate" value="1"> 1</label>
+                <label><input type="radio" name="rate" value="2"> 2</label>
+                <label><input type="radio" name="rate" value="3"> 3</label>
+                <label><input type="radio" name="rate" value="4"> 4</label>
+                <label><input type="radio" name="rate" value="5"> 5</label>
+                <label><input type="radio" name="rate" value="6"> 6</label>
+                <label><input type="radio" name="rate" value="7"> 7</label>
+                <label><input type="radio" name="rate" value="8"> 8</label>
+                <label><input type="radio" name="rate" value="9"> 9</label>
+                <label><input type="radio" name="rate" value="10"> 10</label>
+            </div>
+            <label class="textarea">Deixe um feedback</label>
+            <textarea id="feedback" name="feedback" rows="5" minlength="300" maxlength="500"
+                placeholder="Escreva seu feedback aqui..." required></textarea>
+
+            <div class="agreement-group">
+                <input type="checkbox" id="agreement" name="agreement" required>
+                <label for="agreement" id="label-infos">Você concorda com os termos acima?</label>
+            </div>
+            <button type="submit" id="submit-btn">Enviar</button>
+
         </form>
 
     </main>
+    <footer>
+    <p>© Xablau Summit - Todos os direitos reservados.</p>
+</footer>
+
 
 </body>
 
